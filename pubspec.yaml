@@ -1,0 +1,34 @@
+name: ai_chat
+description: Ai chat
+
+version: 1.0.0+1
+
+environment:
+  sdk: ">=2.18.2 <3.0.0"
+
+dependencies:
+  flutter:
+    sdk: flutter
+
+  cupertino_icons: ^1.0.2
+  crypto: ^3.0.2
+  logger: ^2.0.2+1
+  web_socket_channel: ^2.4.0
+  flutter_dotenv: ^5.1.0
+
+dev_dependencies:
+  flutter_test:
+    sdk: flutter
+  flutter_lints: ^2.0.0
+
+flutter:
+  uses-material-design: true
+
+  assets:
+    - assets/images/
+    - assets/.env
+
+  module:
+    androidX: true
+    androidPackage: com.example.ai_chat
+    iosBundleIdentifier: com.example.aiChat
